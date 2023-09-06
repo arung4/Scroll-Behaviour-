@@ -1,27 +1,25 @@
+// Accessing the buttons 
+const homeButton =document.querySelector(".initial");
+const contentButton =document.querySelector(".middle");
+const footerButton =document.querySelector(".last");
 
-// Accessing the Sections 
-const initialpage=document.querySelector(".first");
-const middlepage=document.querySelector(".second");
-const lastpage=document.querySelector(".third");
+// Accessing the sections 
 
-// Accessing the all anchor tags to be clicked
+const homePage=document.querySelector("#home");
+const contentPage=document.querySelector("#content");
+const footerPage=document.querySelector("#footer");
 
-const initialButton=document.querySelector('.initial');
-const middleButton=document.querySelector('.middle');
-const lastButton=document.querySelector('.last');
+// appling the click event listener to the anchor tags 
 
-initialButton.addEventListener("click",(e)=>{
-  e.preventDefault();
-  initialpage.scrollIntoView({behavior:"smooth"});
+homeButton.addEventListener("click",(e)=>{
+    e.preventDefault();
+    homePage.scrollIntoView({behavior: "smooth"});
 })
-middleButton.addEventListener("click",(e)=>{
-  e.preventDefault();
-  middlepage.scrollIntoView({behavior:"smooth"});
+contentButton.addEventListener("click",(e)=>{
+    e.preventDefault();
+    contentPage.scrollIntoView({behavior: "smooth"});
 })
-lastButton.addEventListener("click",(e)=>{
-  e.preventDefault();
-  lastpage.scrollIntoView({behavior:"smooth"});
+footerButton.addEventListener("click",(e)=>{
+    e.preventDefault();
+    footerPage.scrollIntoView({behavior: "smooth"});
 })
-
-
-
